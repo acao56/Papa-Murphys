@@ -12,7 +12,7 @@ $ cd Papa-Murphys
 $ npm install # "sudo npm install" if you're on macOS or Linux
 ```
 
-Configure information inside the `config.example.json` be sure to rename it to `config.json` when you're done. More information about configuring your script can be found at google.com
+Configure information inside the `config.json`. More information about configuring your script can be found at google.com
 
 
 
@@ -24,6 +24,9 @@ $ node index
 
 ### What does this thing cook?
 - Everything
+
+### Issues?
+DM [me](https://twitter.com/IncorrectCVV) on twitter. Most of the time idc enough to reply so don't expect one.
 
 ### Proxies?
 ```

@@ -13,7 +13,10 @@ $ npm install # "sudo npm install" if you're on macOS or Linux
 ```
 
 Configure information inside the `config.json`. More information about configuring your script can be found at google.com
-
+### Config
+- Homepage - This is the homepage of the promotion, I already set the original.
+- Domain - Your catch-all Domain, this wont work with a gmail account, I can add support if people want
+- Amount - How many codes you want, the script will run all at once, so you should use proxies if you can.
 
 
 Run After Setup:

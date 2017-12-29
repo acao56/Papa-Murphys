@@ -22,7 +22,9 @@ function formatProxy(proxy) {
 }
 /* -- Thanks to @hunterbdm for this -- */
 function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
+  min = Math.ceil(min);
+  max = Math.floor(max);
+return Math.floor(Math.random() * (max - min)) + min;
 }
 
 
@@ -68,12 +70,14 @@ function get() {
             let action = ($('body > div > section.centered.banner.banner--dark.banner--passthepizza.paragraph-text.spacing-bottom-med > div > div > form').attr('action'));
             if (!action) {
               console.log('Page not available, try again later.')
+              return post(session,action)
               process.exit();
             } else if (action.length > 0) {
               return post(session,action)
             } else {
               console.log('Page not available, try again later.')
-              process.exit();
+              return post(session,action)
+              //process.exit();
             }
 
         } else {
@@ -83,7 +87,7 @@ function get() {
 }
 function getEmail() {
   //Need to add Gmail support
-  return faker.name.firstName()  + getRandomArbitrary(1298,199999) + config.Domain;
+  return faker.name.firstName()  + getRandomArbitrary(1298,34567) + '@' + config.Domain;
 }
 function post(session,action) {
     let fname = getEmail();
@@ -116,5 +120,6 @@ function post(session,action) {
             console.log('Form submission failed: ' + response.stausCode)
         }
     })
+
 }
 boot()

@@ -70,14 +70,12 @@ function get() {
             let action = ($('body > div > section.centered.banner.banner--dark.banner--passthepizza.paragraph-text.spacing-bottom-med > div > div > form').attr('action'));
             if (!action) {
               console.log('Page not available, try again later.')
-              return post(session,action)
               process.exit();
             } else if (action.length > 0) {
               return post(session,action)
             } else {
               console.log('Page not available, try again later.')
-              return post(session,action)
-              //process.exit();
+              process.exit();
             }
 
         } else {

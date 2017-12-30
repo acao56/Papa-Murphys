@@ -85,8 +85,17 @@ function get() {
 }
 function getEmail() {
   //Need to add Gmail support
-  return faker.name.firstName()  + getRandomArbitrary(1298,34567) + '@' + config.Domain;
+  const emailSplit = config.Email.split('@');
+  var username = emailSplit[0];
+  const usernameLength = emailSplit[0].length;
+  var numPeriods = getRandomArbitrary(1,usernameLength);
+  for (i = 0; i < numPeriods; i++) {
+    var periodPosition = getRandomArbitrary(1,username);
+    username = username.substring(0,periodPosition) + '.' + username.substring(periodPosition, username.Length);
+  }
+  return username + '@' + emailSplit[1];
 }
+
 function post(session,action) {
     let fname = getEmail();
     let payload = {

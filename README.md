@@ -1,6 +1,6 @@
 # Papa-Murphys
-Papa Johns #PassThePizza Script
-Changes - added gmail support
+- Papa Johns #PassThePizza Script
+- Changes - added gmail support
 ### Installation
 
 Papa-Murphys requires [Node.js](http://nodejs.org/).
@@ -39,8 +39,8 @@ ip:port:user:pass
 ```
 ### Who
 
-Readme stolen from <a href="http://petersoboyejo.com/">@dzt</a>, made better by my nonexistent motivation.
-Forked from https://github.com/Novaaaaa/ and added gmail support
+- Readme stolen from <a href="http://petersoboyejo.com/">@dzt</a>, made better by my nonexistent motivation.
+- Forked from https://github.com/Novaaaaa/ and added gmail support
 
 ## License
 

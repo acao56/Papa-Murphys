@@ -58,7 +58,7 @@ function get() {
         },
         proxy   : formatProxy(proxyList[Math.floor(Math.random() * proxyList.length)])
     }
-
+    console.log(getEmail());
 
     request(opts, function(error, response, body) {
         if(error) {
@@ -90,8 +90,8 @@ function getEmail() {
   const usernameLength = emailSplit[0].length;
   var numPeriods = getRandomArbitrary(1,usernameLength);
   for (i = 0; i < numPeriods; i++) {
-    var periodPosition = getRandomArbitrary(1,username);
-    username = username.substring(0,periodPosition) + '.' + username.substring(periodPosition, username.Length);
+    var periodPosition = getRandomArbitrary(1,username.length);
+    username = username.substring(0,periodPosition) + '.' + username.substring(periodPosition, username.length);
   }
   return username + '@' + emailSplit[1];
 }

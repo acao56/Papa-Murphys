@@ -39,7 +39,7 @@ function boot(){
     }
     console.log('Found ' + proxyList.length + ' proxies.');
     //flex
-    console.log(chalk.green('Papa Johns Pizza Script ---- Twitter.com/incorrectCVV'));
+    console.log(chalk.green('Papa Johns Pizza Script ---- Twitter.com/allen56_'));
     console.log(chalk.green('------------------------------------------------------'))
     for (var i = 0; i < config.Codes; i++) {
       get()

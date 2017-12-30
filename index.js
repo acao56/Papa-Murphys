@@ -58,7 +58,6 @@ function get() {
         },
         proxy   : formatProxy(proxyList[Math.floor(Math.random() * proxyList.length)])
     }
-    console.log(getEmail());
 
     request(opts, function(error, response, body) {
         if(error) {

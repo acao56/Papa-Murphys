@@ -40,7 +40,7 @@ ip:port:user:pass
 ### Who
 
 - Readme stolen from <a href="http://petersoboyejo.com/">@dzt</a>, made better by my nonexistent motivation.
-- Forked from https://github.com/Novaaaaa/ and added gmail support
+- Forked from [Novaaaaa](https://github.com/Novaaaaa/) and added gmail support
 
 ## License
 
